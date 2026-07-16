@@ -7,14 +7,21 @@ function About() {
     return (
         <section 
             id="about" 
-            className="min-h-screen px-6 py-20 flex items-center"
+            className="max-w-7xl mx-auto px-24 pt-25 pb-16 space-y-8"
         >
-            <div className="max-w-4xl mx-auto">
+            {/* Row 1 */}
+            <div className="grid grid-cols-[2fr_1fr] gap-8 min-h-200">
                 <AboutIntro />
-                <Skills />
-                <Timeline />
-                <Links />
+                <div className="h-full gap-8 space-y-8">
+                    <div className="flex-1">
+                        <Links />
+                    </div>
+                    <div className="flex-1">
+                        <Skills />
+                    </div>
+                </div>
             </div>
+            <Timeline />
         </section>
     )
 }

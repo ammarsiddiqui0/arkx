@@ -1,12 +1,9 @@
-import Navbar from "../components/navbar/Navbar";
-import Hero from "../components/hero/Hero";
-import ProjectsPreview from "@/components/projects/ProjectsPreview";
+import HomeGrid from "../components/home/HomeGrid";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <ProjectsPreview />
+      <HomeGrid />
     </>
   );
 }
