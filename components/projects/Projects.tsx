@@ -1,9 +1,23 @@
+"use client";
+
+import { useState } from "react";
 import SectionHeading from "../ui/SectionHeading";
 import ProjectCard from "./ProjectCard";
-import projects from "@/data/projects"
+import projects from "@/data/projects";
 
 
 function Projects() {
+    const [projectList, setProjectList] = useState(projects);
+    function handleLike(id: number) {
+        setProjectList((prevProjects) =>
+            prevProjects.map((project) =>
+                project.id === id
+                    ? { ...project, likes: project.likes + 1 }
+                    : project
+            )
+        );
+    }
+
     return (
         <section className="py-20">
             <SectionHeading>
@@ -12,14 +26,11 @@ function Projects() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {
-                    projects.map((project) => (
+                    projectList.map((project) => (
                         <ProjectCard
-                            image={project.image}
-                            key={project.title}
-                            title={project.title}
-                            description={project.description}
-                            github={project.github}
-                            demo={project.demo}
+                            key={project.id}
+                            project={project}
+                            onLike={() => handleLike(project.id)}
                         />
                     ))
                 }

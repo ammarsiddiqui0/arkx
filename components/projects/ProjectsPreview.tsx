@@ -15,7 +15,6 @@ function ProjectsPreview() {
 
         <>
             <ProjectCard
-                image={featuredProject.image}
                 key={featuredProject.title}
                 title={featuredProject.title}
                 description={featuredProject.description}

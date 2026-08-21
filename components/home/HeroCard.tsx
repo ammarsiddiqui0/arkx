@@ -2,7 +2,7 @@ import Card from "@/components/ui/Card";
 
 function HeroCard() {
     return (
-        <Card className="h-full flex flex-col justify-between">
+        <Card className="h-full flex flex-col justify-between hover:border-emerald-900/60">
             <div className="space-y-6">
                 <h3 className="text-5xl text-emerald-400 font-bold">
                     ARKx.

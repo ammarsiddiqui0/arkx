@@ -13,7 +13,7 @@ import { Mail, FileText } from "lucide-react";
 
 function LinksCard() {
     return (
-        <Card className="h-full flex items-center justify-center">
+        <Card className="h-full flex items-center justify-center hover:border-zinc-700">
             <div className="grid grid-cols-3 gap-y-10 gap-x-24 text-zinc-600">
                 <a href="" className="hover:text-white/80 hover:scale-115 transition-all duration-300">
                     <FaGithub size={30} />
