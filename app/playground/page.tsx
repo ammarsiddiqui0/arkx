@@ -1,6 +1,6 @@
 "use client";
 
-import { useState , createContext , useContext , useRef } from "react";
+import { useState , createContext , useContext , useRef , useEffect } from "react";
 
 const ThemeContext = createContext("dark");
 
@@ -11,6 +11,9 @@ function ThemeDisplay() {
 }
 
 export default function Playground() {
+
+    const previousName = useRef<string | null> (null);
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [age, setAge] = useState("");
@@ -18,6 +21,10 @@ export default function Playground() {
     const nameInputRef = useRef<HTMLInputElement>(null);
 
     const [theme, setTheme] = useState("dark");
+
+    useEffect(() => {
+        previousName.current = name;
+    }, [name]);
 
     function focusNameInput() {
         nameInputRef.current?.focus();
@@ -32,6 +39,9 @@ export default function Playground() {
         <ThemeContext.Provider value={theme}>
             <div className="p-10">
                 <ThemeDisplay />
+
+                <p>Current name: {name}</p>
+                <p>Previous name: {previousName.current}</p>
 
                 <button 
                     type='button'
