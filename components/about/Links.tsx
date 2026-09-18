@@ -65,8 +65,8 @@ const links = [
 
 function Links() {
     return (
-        <Card className="h-full flex flex-col">        
-            <div className="">
+        <Card className="h-full flex flex-col hover:border-white/10">        
+            <div className="text-zinc-600">
                 Links
             </div>
             <div className="mt-6 flex flex-wrap gap-4">

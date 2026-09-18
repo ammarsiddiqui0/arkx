@@ -22,8 +22,8 @@ const tools = [
 
 function Skills() {
     return(
-        <Card className="h-full flex flex-col space-y-6">
-            <div className="">
+        <Card className="h-full flex flex-col space-y-6 hover:border-white/10">
+            <div className="text-zinc-600">
                 Skills
             </div>
             <div className="flex flex-wrap gap-4">
@@ -36,7 +36,7 @@ function Skills() {
 
             <div className="border-t w-full border-zinc-900" />
 
-            <div className="">
+            <div className="text-zinc-600">
                 Tools
             </div>
             <div className="flex flex-wrap gap-4">

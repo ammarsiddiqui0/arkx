@@ -19,12 +19,12 @@ function Projects() {
     }
 
     return (
-        <section className="py-20">
+        <section className="max-w-7xl mx-auto px-24 pt-25 pb-16 space-y-8">
             <SectionHeading>
                 Projects
             </SectionHeading>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {
                     projectList.map((project) => (
                         <ProjectCard

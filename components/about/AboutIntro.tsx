@@ -35,7 +35,7 @@ const interests = [
 
 function AboutIntro() {
     return (
-        <Card className="h-full flex flex-col space-y-10">
+        <Card className="h-full flex flex-col space-y-10 hover:border-white/10">
             <div>
                 <h1 className="text-5xl font-bold">
                     Ark

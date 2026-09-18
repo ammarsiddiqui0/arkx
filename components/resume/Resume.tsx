@@ -1,8 +1,8 @@
-export default function Contact() {
+export default function Resume() {
     return (
         <section>
             <h3>
-                Contact
+                Resume
             </h3>
         </section>
     )

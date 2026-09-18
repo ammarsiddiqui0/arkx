@@ -34,7 +34,7 @@ function Navbar() {
                 <div className="hidden md:flex gap-6">
                         <NavLink label="About" href="/about" />
                         <NavLink label="Projects" href="/projects" />
-                        <NavLink label="Contact" href="#contact" />                
+                        <NavLink label="Resume" href="#resume" />                
                 </div>
 
                 {/* Mobile button */}
@@ -53,7 +53,7 @@ function Navbar() {
                     <div className="fixed left-0 top-16 w-full flex flex-col gap-4 px-6 py-4 md:hidden">
                         <NavLink label="About" href="#about" />
                         <NavLink label="Projects" href="#project" />
-                        <NavLink label="Contact" href="#contact" />                
+                        <NavLink label="Resume" href="#resume" />                
                     </div>
                 )
             }
