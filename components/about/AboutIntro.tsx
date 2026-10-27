@@ -1,4 +1,9 @@
 import Card from "@/components/ui/Card";
+import Image from "next/image";
+import {
+    User,
+    Origami,
+} from 'lucide-react';
 
 
 const about = [
@@ -31,46 +36,61 @@ const interests = [
         name : "Photography",
         hover : "hover:border-orange-200/50 hover:text-orange-200 hover:bg-orange-800/20",
     },
+    {
+        name : "Calisthenics",
+        hover : "hover:border-rose-300/50 hover:text-rose-300 hover:bg-rose-800/20",
+    },
 ]
 
 function AboutIntro() {
     return (
-        <Card className="h-full flex flex-col space-y-10 hover:border-white/10">
-            <div>
-                <h1 className="text-5xl font-bold">
-                    Ark
-                </h1>
+        <Card className="h-full flex flex-col space-y-8 border-rose-400/10 hover:border-white/10">
+            <div className="flex items-center gap-8">
+                <Image
+                    src="/logo.png"
+                    alt="ARKX logo"
+                    width={250}
+                    height={250}
+                    className="h-18 w-18 object-contain"
+                />
+                <div className="space-y-2">
+                    <h1 className="text-4xl font-bold font-mono tracking-tight text-white">
+                        Arkx
+                    </h1>
 
-                <p className="text-zinc-400">
-                    Aspiring Developer
-                </p>
+                    <p className="text-sm font-medium font-mono tracking-wide text-zinc-400">
+                        Aspiring Developer
+                    </p>
+                </div>
             </div>
 
             <div className="border-t w-full border-zinc-900" />
 
-            <div className="text-zinc-600">
-                About
+            <div className="text-xs font-semibold font-mono gap-2 uppercase inline-flex items-center tracking-[0.12em] text-zinc-500">
+                <User className="w-4 h-4"/>
+                <span>About Me</span>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-                {about.map((about) => (
-                    <span key={about} className="border border-white/6 rounded-2xl px-4 py-4 font-semibold text-gray-400 hover:border-white/10 transition">
-                        {about}
+            <div className="flex flex-wrap space-y-4">
+                {about.map((paragraph) => (
+                    <span key={paragraph} className="border border-white/6 rounded-2xl px-4 py-4 text-sm font-semibold font-mono leading-7 text-zinc-400 bg-rose-400/2 hover:bg-rose-950/5 hover:border-white/10 transition">
+                        {paragraph}
                     </span>
                 ))}
             </div>
 
             <div className="border-t w-full border-zinc-900" />
             
-            <div className="text-zinc-600">
-                Interest
+            <div className="text-xs font-semibold font-mono gap-2 uppercase inline-flex items-center tracking-[0.12em] text-zinc-500">
+                <Origami className="w-4 h-4"/>
+                <span>Interests & Hobbies</span>
             </div>
 
             <div className="flex flex-wrap gap-3">
                 {interests.map((interest) => (
                     <span 
                         key={interest.name} 
-                        className={`border border-white/6 rounded-full px-8 py-2 font-semibold text-gray-400 transition-all duration-300
+                        className={`rounded-full border border-white/6 px-4 py-2 text-sm font-semibold font-mono text-zinc-400 transition-all duration-300
                         ${interest.hover}`}
                     >
                         {interest.name}

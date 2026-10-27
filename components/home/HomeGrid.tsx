@@ -8,9 +8,9 @@ import LinksCard from "./LinksCard";
 
 function HomeGrid() {
     return (
-        <section className="max-w-7xl mx-auto px-24 pt-25 pb-16 space-y-8">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-24 pt-25 pb-16 space-y-8">
             {/* Row 1 */}
-            <div className="grid grid-cols-2 gap-8 min-h-105">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-105 lg:min-h-105">
                 <HeroCard />
 
                 <div className="flex flex-col h-full gap-8">
@@ -18,7 +18,7 @@ function HomeGrid() {
                         <FocusCard />
                     </div>
 
-                    <div className="grid grid-cols-2 gap-8 flex-1">
+                    <div className="grid grid-cols-2 gap-4 sm:gap-8 flex-1">
                         <StackCard />
                         <BuildsCard />
                     </div>
@@ -26,7 +26,7 @@ function HomeGrid() {
             </div>
 
             {/* Row 2 */}
-            <div className="grid grid-cols-2 gap-8 min-h-48.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 min-h-48.5">
                 <FeaturedCard />
                 <LinksCard />
             </div>
@@ -38,4 +38,5 @@ function HomeGrid() {
         </section>
     )
 }
+
 export default HomeGrid;

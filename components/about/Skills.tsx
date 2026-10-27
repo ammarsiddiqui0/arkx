@@ -1,5 +1,9 @@
 import SectionHeading from "../ui/SectionHeading";
 import Card from "@/components/ui/Card";
+import {
+    Ribbon,
+    PocketKnife
+} from 'lucide-react';
 
 const skills = [
     "HTML", 
@@ -22,13 +26,14 @@ const tools = [
 
 function Skills() {
     return(
-        <Card className="h-full flex flex-col space-y-6 hover:border-white/10">
-            <div className="text-zinc-600">
-                Skills
+        <Card className="h-full flex flex-col gap-6 hover:border-rose-400/10">
+            <div className="inline-flex items-center gap-2 text-sm font-bold font-mono text-rose-400 tracking-wide">
+                <Ribbon className="w-3.5 h-3.5"/>
+                <span>Skills</span>
             </div>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-3">
                 {skills.map((skill) => (
-                    <span key={skill} className="border border-white/20 rounded-full px-4 py-1 text-sm text-gray-400 bg-white/3 hover:bg-white/10 hover:border-white/40 transition duration-300">
+                    <span key={skill} className="border border-white/10 rounded-full px-4 py-1 text-xs font-semibold font-mono text-gray-400 bg-rose-400/2 hover:text-rose-400 hover:bg-rose-400/20 hover:border-rose-400/80 transition duration-300">
                         {skill}
                     </span>
                 ))}
@@ -36,12 +41,13 @@ function Skills() {
 
             <div className="border-t w-full border-zinc-900" />
 
-            <div className="text-zinc-600">
-                Tools
+            <div className="inline-flex items-center gap-2 text-sm font-bold font-mono text-rose-400 tracking-wide">
+                <PocketKnife className="w-3.5 h-3.5"/>
+                <span>Tools</span>
             </div>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-3">
                 {tools.map((tool) => (
-                    <span key={tool} className="border border-white/20 rounded-full px-4 py-1 text-sm text-gray-400 bg-white/3 hover:bg-white/10 hover:border-white/40 transition duration-300">
+                    <span key={tool} className="border border-white/10 rounded-full px-4 py-1 text-xs font-semibold font-mono text-gray-400 bg-rose-400/2 hover:text-rose-400 hover:bg-rose-400/20 hover:border-rose-400/80 transition duration-300">
                         {tool}
                     </span>
                 ))}
