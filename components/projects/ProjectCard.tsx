@@ -1,28 +1,14 @@
 import Card from "@/components/ui/Card";
+import type { Project } from "@/data/projects";
 import type { Shape } from "@/components/ui/ProjectShape";
 import ProjectShape from "@/components/ui/ProjectShape";
 import { projectColors } from "../ui/projectColors";
-import type { ProjectColor } from "../ui/projectColors";
 import {
     Code2,
     Database,
     PanelsTopLeft,
     CheckSquare,
 } from "lucide-react";
-
-type ProjectStatus = "Active" | "On-hold" | "Private";
-
-type Project = {
-    id: number;
-    title: string;
-    shorthead: string;
-    description: string;
-    color: ProjectColor;
-    github?: string;
-    status: ProjectStatus;
-    demo?: string;
-    likes: number;
-};
 
 type ProjectCardProps = {
     project: Project;

@@ -1,6 +1,21 @@
 import type { ProjectColor } from "@/components/ui/projectColors";
 
-const projects = [
+export type ProjectStatus = "Active" | "On-hold" | "Private" | "Complete";
+
+export type Project = {
+    id: number;
+    title: string;
+    shorthead: string;
+    description: string;
+    github?: string;
+    demo?: string;
+    color: ProjectColor;
+    likes: number;
+    status: ProjectStatus;
+    featured: boolean;
+};
+
+const projects : Project[] = [
     {
         id: 1,
         title: "FeelingsLog",
@@ -61,10 +76,10 @@ const projects = [
         color: "rose" as ProjectColor,
 
         likes: 0,
-        status: "On-Hold",
+        status: "On-hold",
         featured: false
     },
        
-]
+];
 
-export default projects
+export default projects;
