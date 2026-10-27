@@ -55,7 +55,7 @@ function Navbar() {
                 <div className="hidden items-center gap-8  pr-14 md:flex">
                     <NavLink label="About" href="/about" />
                     <NavLink label="Projects" href="/projects" />
-                    <NavLink label="Resume" href="#resume" />
+                    <NavLink label="Contact" href="/contact" />
                 </div>
 
                 {/* Mobile menu button */}
@@ -88,7 +88,7 @@ function Navbar() {
                     <div className="mx-auto flex max-w-7xl flex-col gap-5">
                         <NavLink label="About" href="/about" onClick={closeMenu} />
                         <NavLink label="Projects" href="/projects" onClick={closeMenu} />
-                        <NavLink label="Resume" href="#resume" onClick={closeMenu} />
+                        <NavLink label="Contact" href="/contact" onClick={closeMenu} />
                     </div>
                 </div>
             )}
