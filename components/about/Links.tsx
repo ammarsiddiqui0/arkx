@@ -17,51 +17,34 @@ const links = [
     {
         icon: CodeXml,
         name: "GitHub",
-        url: "https://github.com/",
+        url: "https://github.com/ammarsiddiqui0",
         color : "hover:border-zinc-200/50 hover:text-zinc-200 hover:bg-zinc-800/20",
     },
     {
         icon: UserRoundCheck,
         name: "LinkedIn",
-        url: "https://linkedin.com/",
+        url: "https://in.linkedin.com/in/ammarsiddiqui0",
         color : "hover:border-blue-200/50 hover:text-blue-200 hover:bg-blue-800/20",
     },
     {
         icon: Camera,
         name: "Instagram",
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/ammarsiddiqui04",
         color : "hover:border-purple-200/50 hover:text-purple-200 hover:bg-purple-800/20",
     },
     {
         icon: FileText,
         name: "Resume",
-        url: "/resume.pdf",
+        url: "/ammaresume.pdf",
         color : "hover:border-indigo-200/50 hover:text-indigo-200 hover:bg-indigo-800/20",
     },
     {
         icon: Mail,
         name: "Email",
-        url: "mailto:your@email.com",
+        url: "mailto:ammarmaks24@gmail.com",
         color : "hover:border-amber-200/50 hover:text-amber-200 hover:bg-amber-800/20",
     },
-    {
-        icon: AudioWaveform,
-        name: "Spotify",
-        url: "https://spotify.com/",
-        color : "hover:border-green-200/50 hover:text-green-200 hover:bg-green-800/20",
-    },
-    {
-        icon: Pin,
-        name: "Pinterest",
-        url: "https://pinterest.com",
-        color : "hover:border-red-200/50 hover:text-red-200 hover:bg-red-800/20"
-    },
-    {
-        icon: Tv,
-        name: "Anilist",
-        url: "https://anilist.to",
-        color : "hover:border-sky-200/50 hover:text-sky-200 hover:bg-sky-800/20"
-    },
+    
 ]
 
 function Links() {

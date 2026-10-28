@@ -21,7 +21,7 @@ function HeroCard() {
 
                     <div>
                         <h3 className="text-5xl font-mono text-rose-400 font-bold">
-                            ARK.
+                            AMMAR.
                         </h3>
                         <p className="text-sm text-zinc-400 font-semibold font-mono">
                             Aspiring fullstack developer
@@ -32,7 +32,7 @@ function HeroCard() {
 
             {/* Introduction */}
             <p className="max-w-xl text-base leading-7 font-mono text-zinc-400 mb-6">
-                Hey, I'm Arkx. I'm a student developer learning to build
+                Hey, I'm Ammar Siddiqui. I'm a student developer learning to build
                 software from the ground up, Trying to depend less on AI with each code and to
                 master the fundamentals.
             </p>

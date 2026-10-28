@@ -64,7 +64,7 @@ const timeline = [
     {
         year: "2021",
         role: "College",
-        title: "START",
+        title: "SSC & COLLEGE",
         detail: "College introduced C++. Poor teaching made me lose motivation.",
         icon: Laptop,
         color: "text-indigo-400",
@@ -76,9 +76,9 @@ function Timeline() {
     return (
         <section className="mt-40">
             <div className="flex flex-col items-center space-y-2">
-                <h3 className="text-4xl font-bold font-mono tracking-wide">
+                <SectionHeading>
                     Journey
-                </h3>
+                </SectionHeading>
                 <div className="border-t w-8 border-zinc-800" />
                 <p className="text-[8px] font-bold font-mono text-zinc-600 tracking-wider">
                     PROJECTS, LEARNING & MILESTONES

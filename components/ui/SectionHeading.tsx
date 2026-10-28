@@ -4,7 +4,7 @@ type SectionHeadingProps = {
 
 function SectionHeading({ children }: SectionHeadingProps){
     return(
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-4xl font-bold font-mono tracking-wide">
             {children}
         </h2>
     )

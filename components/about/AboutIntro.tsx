@@ -54,8 +54,8 @@ function AboutIntro() {
                     className="h-18 w-18 object-contain"
                 />
                 <div className="space-y-2">
-                    <h1 className="text-4xl font-bold font-mono tracking-tight text-white">
-                        Arkx
+                    <h1 className="text-4xl font-bold font-mono tracking-wider text-white">
+                        Ammar Siddiqui
                     </h1>
 
                     <p className="text-sm font-medium font-mono tracking-wide text-zinc-400">
